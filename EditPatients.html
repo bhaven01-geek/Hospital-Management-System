@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Edit Patient's Details</title>
+    
+    <meta name='viewport' content="width=device-width, initial-scale=1 shrink-to-fit=no">
+
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- JS & CSS library of MultiSelect plugin -->
+<script src="multiselect/jquery.multiselect.js"></script>
+<link rel="stylesheet" href="multiselect/jquery.multiselect.css">
+
+    
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/form.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+<link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+
+<!--link rel="stylesheet" href="assets/css/Style.css"-->
+
+</head>
+
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark navbar-custom" style="position: fixed;">
+  <a class="navbar-brand" style="font-size:150%; margin-left: 9%;">CITY HOSPITAL</a>
+      <button data-toggle="collapse" class="navbar-toggler" data-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="Dashboard.html">DASHBOARD</a></li>
+              <li class="nav-item"><a class="nav-link" href="Login.html">LOG OUT</a></li>
+          </ul>
+      
+  </div>
+</nav>
+
+<body>
+    
+    <form name ="f1" method="POST" >  
+        <div class="container">  
+          <div class="intro">
+            <h2 class="text-center" style="margin-top: 70px;">PATIENT'S DATA</h2>
+        </div>
+        <h6>  
+          <div>
+        <label >PATIENT'S NAME : </label>   
+      <input type="text" name="firstname" placeholder= "Patient's Name" name ="Pname " size="15" required />  
+      <table style="margin-top: -45px;"cellpadding="6">
+              <tr >
+                  <td ><label>   GENDER :  </label> </td>
+                  <td>
+                    <input type="radio" value="Male" name="gender" checked > MALE  <br>      
+                    <input type="radio" value="Female" name="gender"> FEMALE  <br>
+                    <input type="radio" value="Other" name="gender"> OTHER 
+                  </td> 
+              </tr>
+
+
+
+              <tr>  
+                <td><br><br><label>BLOOD GROUP : </label>    </td> 
+                <td>
+                  <br><br>
+                  <select style="background-color: lightgrey;border:none;height:40px">  
+                    <option>A+</option>  
+                    <option>A-</option>  
+                    <option>AB+</option>  
+                    <option>AB-</option>  
+                    <optio>B+</option>  
+                    <option>B-</option>  
+                    <option>O+</option>  
+                    <option>O-</option>  
+                  </select> 
+                </td>
+            </tr>      
+
+            <tr>  
+              <td><br><br><label>PATIENT'S HEALTH STATUS : </label>    </td> 
+              <td>
+                <br><br>
+                <select style="background-color: lightgrey;border:none;height:40px"> 
+                  <option></option> 
+                  <option>RECOVERED</option>  
+                  <option>RECOVERED (Home Quarantine)</option>  
+                  <option>NOT RECOVERED</option>  
+                  
+                </select> 
+              </td>
+          </tr>
+          <tr>
+            <td><br><br><label>DATE OF COVID-19 TEST</label></td>
+            <td><br><br><input type="date"style="background-color: lightgrey;border:none;height:40px"required/></td>
+          </tr>
+           
+            <tr>
+              <td><br><br><label> VENTILATOR NEEDED ? : </label></td>
+            
+              <td><br><br><input type="radio" value="Yes" name="gender" checked > YES  </td>     
+              <td><br><br><input type="radio" value="No" name="gender" > NO </td>
+              <br><br>
+            </tr>
+
+            <tr>
+              <td><br><br>BED NO.</td>
+              <td><br><br><input type="text"required/></td>
+            </tr>
+
+            <br><br>
+            <tr>
+              <td><br><br> <label>DOCTOR ASSIGNED : </label></td>
+                    
+            
+              <td><br><br>
+              <select style="background-color: lightgrey;border:none;height:40px"> 
+                <option > </option>
+                  <option>MR. BHAVENDRA</option>
+                  <option>MS. CANDIDA</option>
+                  <option>MR. RONALD</option> 
+                  <option>MR. VIBHAV</option> 
+                  </select> 
+                </td>
+          </tr>
+
+          <tr>
+            <td><label>CURRENT COVID SYMPTOMS : </label> </td> 
+              
+            <td><br> <br>
+          <input type="checkbox" class ="sym">None<br>
+          <input type="checkbox" class ="sym">Fever<br>
+          <input type="checkbox" class ="sym">Dry Cough<br>
+          <input type="checkbox" class ="sym">Shortness Of Breath<br>
+          <input type="checkbox" class ="sym">Chest Pain<br>
+          <input type="checkbox" class ="sym">Diarrhoea<br>
+          <input type="checkbox" class ="sym">Sore throat<br>
+          <input type="checkbox" class ="sym">Loss of Taste<br>
+          <input type="checkbox" class ="sym">Head Ache<br>
+          <input type="checkbox" class ="sym">Body Ache and Pain<br>
+        </td>
+        </tr>
+</table>
+  <br><br>
+
+            <button type="submit" class="registerbtn">UPDATE DETAILS</button>   </h6>  
+      </form>  
+      
+</div>
+
+</body>
+</html>
